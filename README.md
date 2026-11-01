@@ -14,6 +14,10 @@ The project includes:
 This is an educational simulator with simplified physics. It is not a Rocket
 League clone and is not affiliated with Psyonix or Epic Games.
 
+## Demo
+
+[▶ Watch the trained agent navigate a procedural tube](./assets/RL-PPO-Demo.mp4?raw=1)
+
 ## Results
 
 The included policy was evaluated on 500 held-out procedural tubes using seeds

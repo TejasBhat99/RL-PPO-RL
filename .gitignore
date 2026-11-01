@@ -36,6 +36,7 @@ runs/
 checkpoints/
 *.tfevents.*
 *.mp4
+!assets/RL-PPO-Demo.mp4
 
 # Keep the full local experiment history out of Git while publishing the
 # selected release policy and its evidence.
