@@ -16,7 +16,7 @@ League clone and is not affiliated with Psyonix or Epic Games.
 
 ## Demo
 
-[▶ Watch the trained agent navigate a procedural tube](./assets/RL-PPO-Demo.mp4?raw=1)
+![Trained agent navigating a procedural tube](./assets/RL-PPO-Demo.gif)
 
 ## Results
 
