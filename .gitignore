@@ -1,0 +1,50 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+coverage.xml
+htmlcov/
+build/
+dist/
+*.whl
+
+# Environments and local configuration
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+
+# Editors and operating systems
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# Local agent and cloud metadata
+.agents/
+.aws/
+.codex/
+
+# Training output
+runs/
+checkpoints/
+*.tfevents.*
+*.mp4
+
+# Keep the full local experiment history out of Git while publishing the
+# selected release policy and its evidence.
+artifacts/*
+!artifacts/SHA256SUMS
+!artifacts/torch_ppo/
+artifacts/torch_ppo/*
+!artifacts/torch_ppo/tube_v4_dagger_pass2/
+artifacts/torch_ppo/tube_v4_dagger_pass2/*
+!artifacts/torch_ppo/tube_v4_dagger_pass2/best_model.pt
+!artifacts/torch_ppo/tube_v4_dagger_pass2/holdout_metrics.json
+!artifacts/torch_ppo/tube_v4_dagger_pass2/metrics.json

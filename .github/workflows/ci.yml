@@ -1,0 +1,52 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      SDL_VIDEODRIVER: dummy
+      SDL_AUDIODRIVER: dummy
+      PYGAME_HIDE_SUPPORT_PROMPT: "1"
+
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Install RLRL
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -e ".[dev,train]"
+
+      - name: Verify dependencies
+        run: python -m pip check
+
+      - name: Verify released checkpoint
+        run: sha256sum --check artifacts/SHA256SUMS
+
+      - name: Run tests
+        run: python -m pytest
+
+      - name: Build wheel
+        run: python -m build --wheel
+
+      - name: Smoke-test the bundled policy
+        run: |
+          python scripts/evaluate_tube_ppo.py \
+            artifacts/torch_ppo/tube_v4_dagger_pass2/best_model.pt \
+            --stage procedural_tube \
+            --episodes 2 \
+            --seed 800000

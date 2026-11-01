@@ -1,0 +1,52 @@
+{
+  "selected_checkpoint": "artifacts/torch_ppo/tube_v4_dagger_pass2/best_model.pt",
+  "paired_holdout": {
+    "stage": "procedural_tube",
+    "seed_start": 800000,
+    "episodes": 500,
+    "selected_policy": {
+      "success_rate": 0.934,
+      "crash_rate": 0.066,
+      "mean_progress": 0.988,
+      "mean_reward": 104.566,
+      "reward_std": 50.610,
+      "mean_episode_length": 105.774,
+      "mean_radial_error": 1.901,
+      "mean_control_change": 0.062
+    },
+    "original_ppo_baseline": {
+      "checkpoint": "artifacts/torch_ppo/tube_v1_final_v2/procedural_tube/best_model.pt",
+      "success_rate": 0.832,
+      "crash_rate": 0.168,
+      "mean_progress": 0.921,
+      "mean_reward": 84.056,
+      "reward_std": 78.307,
+      "mean_episode_length": 47.682,
+      "mean_radial_error": 1.469,
+      "mean_control_change": 0.080
+    }
+  },
+  "regression_evaluations": {
+    "procedural_robust": {
+      "seed_start": 810000,
+      "episodes": 300,
+      "success_rate": 0.940,
+      "mean_progress": 0.992,
+      "mean_radial_error": 1.949
+    },
+    "procedural_hard_tail": {
+      "seed_start": 820000,
+      "episodes": 300,
+      "success_rate": 0.923,
+      "mean_progress": 0.972,
+      "mean_radial_error": 2.090
+    },
+    "curved_tube": {
+      "seed_start": 830000,
+      "episodes": 200,
+      "success_rate": 1.0,
+      "mean_progress": 1.0,
+      "mean_radial_error": 1.831
+    }
+  }
+}

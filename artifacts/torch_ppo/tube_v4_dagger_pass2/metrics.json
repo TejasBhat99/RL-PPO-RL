@@ -1,0 +1,242 @@
+{
+  "anchor": {
+    "procedural_tube": {
+      "successful_episodes": 100.0,
+      "attempts": 106.0,
+      "success_rate": 0.9433962264150944,
+      "transitions": 10840.0
+    },
+    "procedural_robust": {
+      "successful_episodes": 100.0,
+      "attempts": 106.0,
+      "success_rate": 0.9433962264150944,
+      "transitions": 10828.0
+    },
+    "procedural_challenging": {
+      "successful_episodes": 100.0,
+      "attempts": 110.0,
+      "success_rate": 0.9090909090909091,
+      "transitions": 10871.0
+    },
+    "procedural_hard_tail": {
+      "successful_episodes": 100.0,
+      "attempts": 115.0,
+      "success_rate": 0.8695652173913043,
+      "transitions": 10920.0
+    }
+  },
+  "iterations": [
+    {
+      "iteration": 1,
+      "expert_probability": 0.2,
+      "aggregate_transitions": 94664,
+      "collection": {
+        "procedural_tube": {
+          "episodes": 120.0,
+          "success_rate": 0.8333333333333334,
+          "transitions": 12690.0,
+          "expert_action_fraction": 0.4372734436564224,
+          "intervention_fraction": 0.2937746256895193
+        },
+        "procedural_robust": {
+          "episodes": 120.0,
+          "success_rate": 0.8666666666666667,
+          "transitions": 12851.0,
+          "expert_action_fraction": 0.4297720021788188,
+          "intervention_fraction": 0.28822659715197263
+        },
+        "procedural_challenging": {
+          "episodes": 120.0,
+          "success_rate": 0.7916666666666666,
+          "transitions": 12723.0,
+          "expert_action_fraction": 0.4305588304645131,
+          "intervention_fraction": 0.29183368702350077
+        },
+        "procedural_hard_tail": {
+          "episodes": 120.0,
+          "success_rate": 0.825,
+          "transitions": 12941.0,
+          "expert_action_fraction": 0.4671972799629086,
+          "intervention_fraction": 0.33150452051618884
+        }
+      },
+      "training": {
+        "epoch": 6.0,
+        "loss": 0.03905424182402327,
+        "continuous_mse": 0.0021495737204764117,
+        "binary_bce": 0.07380933615755528,
+        "boost_accuracy": 0.9372200625369729
+      },
+      "evaluation": {
+        "episodes": 300.0,
+        "success_rate": 0.9266666666666666,
+        "crash_rate": 0.07333333333333333,
+        "mean_reward": 102.98727690007375,
+        "reward_std": 53.16030208412854,
+        "mean_episode_length": 106.09,
+        "mean_progress": 0.9864775702158609,
+        "mean_radial_error": 1.9656466210813324,
+        "mean_control_change": 0.05952625517923451
+      }
+    },
+    {
+      "iteration": 2,
+      "expert_probability": 0.1,
+      "aggregate_transitions": 146297,
+      "collection": {
+        "procedural_tube": {
+          "episodes": 120.0,
+          "success_rate": 0.975,
+          "transitions": 12891.0,
+          "expert_action_fraction": 0.35893258862772476,
+          "intervention_fraction": 0.2897370258319758
+        },
+        "procedural_robust": {
+          "episodes": 120.0,
+          "success_rate": 0.9666666666666667,
+          "transitions": 12896.0,
+          "expert_action_fraction": 0.37476736972704716,
+          "intervention_fraction": 0.304590570719603
+        },
+        "procedural_challenging": {
+          "episodes": 120.0,
+          "success_rate": 0.9166666666666666,
+          "transitions": 12819.0,
+          "expert_action_fraction": 0.36984164131367503,
+          "intervention_fraction": 0.2993993291208363
+        },
+        "procedural_hard_tail": {
+          "episodes": 120.0,
+          "success_rate": 0.9333333333333333,
+          "transitions": 13027.0,
+          "expert_action_fraction": 0.39748215245259844,
+          "intervention_fraction": 0.33200276349121055
+        }
+      },
+      "training": {
+        "epoch": 6.0,
+        "loss": 0.03889242709717817,
+        "continuous_mse": 0.0026779732078365567,
+        "binary_bce": 0.07242890819907188,
+        "boost_accuracy": 0.9384881439810796
+      },
+      "evaluation": {
+        "episodes": 300.0,
+        "success_rate": 0.8833333333333333,
+        "crash_rate": 0.11666666666666667,
+        "mean_reward": 94.34432846090536,
+        "reward_std": 65.17198447540262,
+        "mean_episode_length": 105.83,
+        "mean_progress": 0.982630659866333,
+        "mean_radial_error": 1.9511170673355749,
+        "mean_control_change": 0.060040428227119365
+      }
+    },
+    {
+      "iteration": 3,
+      "expert_probability": 0.05,
+      "aggregate_transitions": 197925,
+      "collection": {
+        "procedural_tube": {
+          "episodes": 120.0,
+          "success_rate": 0.9666666666666667,
+          "transitions": 12856.0,
+          "expert_action_fraction": 0.313627878033603,
+          "intervention_fraction": 0.2795581829495955
+        },
+        "procedural_robust": {
+          "episodes": 120.0,
+          "success_rate": 0.9,
+          "transitions": 12819.0,
+          "expert_action_fraction": 0.34113425384195334,
+          "intervention_fraction": 0.30649816678368047
+        },
+        "procedural_challenging": {
+          "episodes": 120.0,
+          "success_rate": 0.9083333333333333,
+          "transitions": 12902.0,
+          "expert_action_fraction": 0.3015036428460704,
+          "intervention_fraction": 0.2650751821423035
+        },
+        "procedural_hard_tail": {
+          "episodes": 120.0,
+          "success_rate": 0.9083333333333333,
+          "transitions": 13051.0,
+          "expert_action_fraction": 0.36135162056547393,
+          "intervention_fraction": 0.32909355604934487
+        }
+      },
+      "training": {
+        "epoch": 6.0,
+        "loss": 0.03787928934871536,
+        "continuous_mse": 0.0027208006556731523,
+        "binary_bce": 0.07031697756850842,
+        "boost_accuracy": 0.94094227611469
+      },
+      "evaluation": {
+        "episodes": 300.0,
+        "success_rate": 0.8466666666666667,
+        "crash_rate": 0.15333333333333332,
+        "mean_reward": 86.58710864021151,
+        "reward_std": 73.65949818969106,
+        "mean_episode_length": 104.68333333333334,
+        "mean_progress": 0.9665082964579264,
+        "mean_radial_error": 1.988499105152511,
+        "mean_control_change": 0.0609665574019449
+      }
+    },
+    {
+      "iteration": 4,
+      "expert_probability": 0.0,
+      "aggregate_transitions": 249433,
+      "collection": {
+        "procedural_tube": {
+          "episodes": 120.0,
+          "success_rate": 0.9166666666666666,
+          "transitions": 12870.0,
+          "expert_action_fraction": 0.28593628593628595,
+          "intervention_fraction": 0.28593628593628595
+        },
+        "procedural_robust": {
+          "episodes": 120.0,
+          "success_rate": 0.8916666666666667,
+          "transitions": 12810.0,
+          "expert_action_fraction": 0.3154566744730679,
+          "intervention_fraction": 0.3154566744730679
+        },
+        "procedural_challenging": {
+          "episodes": 120.0,
+          "success_rate": 0.8916666666666667,
+          "transitions": 12831.0,
+          "expert_action_fraction": 0.3116670563479074,
+          "intervention_fraction": 0.3116670563479074
+        },
+        "procedural_hard_tail": {
+          "episodes": 120.0,
+          "success_rate": 0.9,
+          "transitions": 12997.0,
+          "expert_action_fraction": 0.33430791721166425,
+          "intervention_fraction": 0.33430791721166425
+        }
+      },
+      "training": {
+        "epoch": 6.0,
+        "loss": 0.03657820307817616,
+        "continuous_mse": 0.002634206227576513,
+        "binary_bce": 0.06788799355997414,
+        "boost_accuracy": 0.9434397212878809
+      },
+      "evaluation": {
+        "episodes": 300.0,
+        "success_rate": 0.8566666666666667,
+        "crash_rate": 0.14333333333333334,
+        "mean_reward": 88.87917770699464,
+        "reward_std": 71.24328440376362,
+        "mean_episode_length": 105.55666666666667,
+        "mean_progress": 0.9759068448384604,
+        "mean_radial_error": 1.9130559163895358,
+        "mean_control_change": 0.06185283402004071
+      }
+    }
+  ]
+}
