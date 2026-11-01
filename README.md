@@ -279,5 +279,4 @@ artifacts/            # Selected policy and evaluation metrics
 - The agent observes structured state rather than pixels.
 - Tube generation uses a bounded sinusoidal course family.
 - Tube boost is unlimited.
-- There is no ball, opponent, or ground-driving task.
 - The Pygame renderer is designed for visualization, not photorealism.
